@@ -23,6 +23,7 @@
         android:layout_width="match_parent"
         android:layout_height="match_parent"
         android:id="@+id/relativeArticleNotFound"
+        android:layout_marginBottom="150dp"
         android:visibility="gone">
 
         <LinearLayout
@@ -48,12 +49,18 @@
                 android:text="No Article Found"
                 android:textColor="@color/colorAccent"
                 android:textStyle="bold"/>
-
-
-
-
         </LinearLayout>
     </RelativeLayout>
 
 
+    <com.google.android.gms.ads.AdView
+        xmlns:ads="http://schemas.android.com/apk/res-auto"
+        android:id="@+id/adView"
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:layout_gravity="bottom"
+        ads:adSize="BANNER"
+        ads:adUnitId="ca-app-pub-9028512770259391/3176938231">
+    </com.google.android.gms.ads.AdView>
+    <!--ca-app-pub-9028512770259391/3176938231-->
 </FrameLayout>

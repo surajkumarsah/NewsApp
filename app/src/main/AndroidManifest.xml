@@ -1,5 +1,6 @@
 <?xml version="1.0" encoding="utf-8"?>
 <manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
     package="com.example.newsapp">
 
     <uses-permission android:name="android.permission.INTERNET" />
@@ -11,11 +12,12 @@
         android:roundIcon="@mipmap/ic_launcher_round"
         android:supportsRtl="true"
         android:usesCleartextTraffic="true"
+        tools:ignore="GoogleAppIndexingWarning"
         android:theme="@style/AppTheme">
         <meta-data
             android:name="com.google.android.gms.ads.APPLICATION_ID"
-            android:value="ca-app-pub-################~##########"/>
-
+            android:value="ca-app-pub-9028512770259391~2055428259"/>
+            <!--ca-app-pub-9028512770259391~2055428259-->
 
         <activity android:name=".Activities.ListStackActivity"></activity>
         <activity android:name=".Activities.MainActivity">

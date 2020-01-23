@@ -10,7 +10,7 @@
     <RelativeLayout
         android:layout_width="match_parent"
         android:layout_height="match_parent"
-        android:background="@color/colorPrimary"
+        android:background="@drawable/background"
         >
 
         <RelativeLayout
@@ -23,6 +23,7 @@
                 android:layout_height="250dp"
                 android:src="@drawable/ic_find_in_page_black_24dp"
                 android:scaleType="fitXY"
+                android:padding="10dp"
                 android:id="@+id/imageNews"
                 />
 
@@ -50,7 +51,7 @@
                 android:textStyle="bold"
                 android:textSize="18sp"
                 android:layout_margin="5dp"
-                android:textColor="#fff"
+                android:textColor="@color/white"
                 android:text="News Details Articles"
                 />
 
@@ -62,7 +63,7 @@
                 android:layout_below="@+id/newsTitle"
                 android:layout_marginTop="10dp"
                 android:padding="10dp"
-                android:textColor="#fff"
+                android:textColor="@color/white"
                 android:text="News Descriptions"
                 />
 
@@ -85,7 +86,7 @@
                 android:text="WebsiteNews.com"
                 android:textSize="15sp"
                 android:textStyle="bold"
-                android:textColor="#fff"
+                android:textColor="@color/white"
                 android:maxLines="24"
                 android:id="@+id/websiteNameText"
                 android:padding="5dp"
@@ -99,7 +100,7 @@
                 android:layout_below="@+id/newsUrl"
                 android:text="7 hours ago"
                 android:layout_marginTop="10dp"
-                android:textColor="#fff"
+                android:textColor="@color/white"
                 android:padding="5dp"
                 android:id="@+id/newsTime"
                 android:layout_marginLeft="40dp"

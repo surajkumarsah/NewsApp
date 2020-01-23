@@ -14,6 +14,9 @@ import com.example.newsapp.R;
 import com.example.newsapp.Retrofit.ApiClient;
 import com.example.newsapp.Retrofit.ApiInterface;
 import com.example.newsapp.Utils.AppConstants;
+import com.google.android.gms.ads.AdRequest;
+import com.google.android.gms.ads.AdView;
+import com.google.android.gms.ads.MobileAds;
 
 import java.util.ArrayList;
 import java.util.List;
@@ -35,10 +38,21 @@ public class ListStackActivity extends AppCompatActivity implements SwipeStack.S
     StackAdapter stackAdapter;
     String sourceId, webHotUrl;
 
+    AdView mAdView;
+
+
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_list_stack);
+
+
+        MobileAds.initialize(this,
+                "ca-app-pub-9028512770259391~2055428259");
+
+        mAdView = findViewById(R.id.adView);
+        AdRequest adRequest = new AdRequest.Builder().build();
+        mAdView.loadAd(adRequest);
 
         ButterKnife.bind(this);
 
